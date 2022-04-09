@@ -18,6 +18,5 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         rigidbody.AddForce(force * Time.deltaTime * move);
-        Debug.Log(move);
     }
 }
